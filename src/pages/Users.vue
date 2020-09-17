@@ -15,9 +15,12 @@
           </thead>
 
           <tbody>
-          <tr v-for="user in users" :key="user.id">
-            <td>{{ user.name }}</td>
-            <td>{{ user.age }}</td>
+          <tr v-for="user in users" :key="user.id.value">
+            <td>
+              <img :src="user.picture.medium" :alt="user.name.first + ' ' + user.name.last">
+              <span>{{ user.name.first }} {{ user.name.last }}</span>
+            </td>
+            <td>{{ user.dob.age }}</td>
             <td>{{ user.gender }}</td>
           </tr>
         </tbody>
@@ -29,6 +32,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -36,10 +40,21 @@ export default {
     }
   },
   created() {
-    this.users = [
-        {id: 1, name: 'Jack', age: 22, gender: 'male'},
-        {id: 2, name: 'Alex', age: 24, gender: 'male'}
-    ]
+    axios
+      .get('https://randomuser.me/api/?results=15&inc=id,picture,name,dob,gender')
+        .then(response => {
+          console.log(response.data.results)
+          this.users = response.data.results
+        })
   },
 }
 </script>
+
+<style lang="scss" scoped>
+  img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+</style>
