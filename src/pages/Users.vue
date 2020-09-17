@@ -8,23 +8,27 @@
           <!-- thead -->
           <thead>
             <tr >
-              <th>Name</th>
-              <th>Age</th>
-              <th>Gender</th>
+              <th @click="sort('name')">Name</th>
+              <th @click="sort('age')">Age</th>
+              <th @click="sort('gender')">Gender</th>
             </tr>
           </thead>
 
+          <!-- tbody -->
           <tbody>
-          <tr v-for="user in users" :key="user.id.value">
+          <tr v-for="user in usersSort" :key="user.id">
             <td>
-              <img :src="user.picture.medium" :alt="user.name.first + ' ' + user.name.last">
-              <span>{{ user.name.first }} {{ user.name.last }}</span>
+              <img :src="user.picture.medium" :alt="user.name">
+              <span>{{ user.name }}</span>
             </td>
-            <td>{{ user.dob.age }}</td>
+            <td>{{ user.age }}</td>
             <td>{{ user.gender }}</td>
           </tr>
         </tbody>
         </table>
+
+        <!-- debug -->
+        <p>debug: sort: {{ currentSort }}, dir: {{ currentSortDir }}</p>
 
       </div>
     </section>
@@ -36,16 +40,37 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      users: []
+      users: [],
+      currentSort: 'name',
+      currentSortDir: 'asc'
     }
   },
   created() {
     axios
-      .get('https://randomuser.me/api/?results=15&inc=id,picture,name,dob,gender')
+      .get('http://localhost:3000/list')
         .then(response => {
-          console.log(response.data.results)
-          this.users = response.data.results
+          console.log(response.data)
+          this.users = response.data
         })
+  },
+  computed: {
+    usersSort () {
+      return this.users.sort((a, b) => {
+        let mod = 1
+        if (this.currentSortDir === 'desc') mod = -1
+        if (a[this.currentSort] < b[this.currentSort]) return -1 * mod
+        if (a[this.currentSort] > b[this.currentSort]) return 1 * mod
+        return 0
+      })
+    }
+  },
+  methods: {
+    sort (e) {
+      if (e === this.currentSort) {
+        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc'
+      }
+      this.currentSort = e
+    }
   },
 }
 </script>

@@ -1,0 +1,169 @@
+{
+  "list": [
+    {
+      "gender": "female",
+      "name": "Ülkü Paksüt",
+      "age": 52,
+      "id": 1,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/28.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/28.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/28.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Lucas Romero",
+      "age": 71,
+      "id": 2,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/68.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/68.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/68.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Javier Thompson",
+      "age": 36,
+      "id": 3,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/56.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/56.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/56.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Anton Thomsen",
+      "age": 50,
+      "id": 4,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/44.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/44.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/44.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Wiktor Abdulle",
+      "age": 65,
+      "id": 5,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/79.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/79.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/79.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Chad Cunningham",
+      "age": 44,
+      "id": 6,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/18.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/18.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/18.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "name": "Edita Van den Bor",
+      "age": 30,
+      "id": 7,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/28.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/28.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/28.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "name": "Charlie Wong",
+      "age": 44,
+      "id": 8,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/79.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/79.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/79.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Marko Fuß",
+      "age": 60,
+      "id": 9,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Oscar Gonzales",
+      "age": 28,
+      "id": 10,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/19.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Jörg-Peter Beermann",
+      "age": 72,
+      "id": 11,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/47.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/47.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/47.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "name": "Edith Yilmaz",
+      "age": 24,
+      "id": 12,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/76.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/76.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/76.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "name": "Anísia Freitas",
+      "age": 54,
+      "id": 13,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/49.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/49.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/49.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "name": "Roman Chen",
+      "age": 60,
+      "id": 14,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/20.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/20.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/20.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "name": "Scarlett James",
+      "age": 65,
+      "id": 15,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/80.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/80.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/80.jpg"
+      }
+    }
+  ]
+}
